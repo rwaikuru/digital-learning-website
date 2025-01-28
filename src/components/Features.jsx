@@ -99,89 +99,116 @@ export const BentoCard = ({ src, title, description, isComingSoon }) => {
 };
 
 const Features = () => (
-  <section className="bg-black pb-52">
+  <section className=" pb-52">
     <div className="container mx-auto px-3 md:px-10">
-      <div className="px-5 py-32">
-        <p className="font-circular-web text-lg text-blue-50">
-          Into the Metagame Layer
-        </p>
-        <p className="max-w-md font-circular-web text-lg text-blue-50 opacity-50">
-          Immerse yourself in a rich and ever-expanding universe where a vibrant
-          array of products converge into an interconnected overlay experience
-          on your world.
-        </p>
-      </div>
+    <div className="px-5 py-32">
+    <div className="text-[#F77F00] font-bold text-3xl mb-10">WHAT WE DO</div>
 
-      <BentoTilt className="border-hsla relative mb-7 h-96 w-full overflow-hidden rounded-md md:h-[65vh]">
-        <BentoCard
-          src="videos/feature-1.mp4"
-          title={
-            <>
-              radia<b>n</b>t
-            </>
-          }
-          description="A cross-platform metagame app, turning your activities across Web2 and Web3 games into a rewarding adventure."
-          isComingSoon
-        />
-      </BentoTilt>
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+    
+    {/* Item 1 */}
+    <div>
+    <p className="text-xl font-bold text-white">01.</p>
+      <h3 className="font-circular-web text-sm font-semibold text-blue-700">
+        Our Vision
+      </h3>
+      <p className="font-circular-web text-lg text-gray-500">
+      To be leading developers and implementers of digital content and eLearning technologies in teaching and learning.
+      </p>
+    </div>
+
+    {/* Item 2 */}
+    <div>
+    <p className="text-xl font-bold text-white">02.</p>
+      <h3 className="font-circular-web text-sm font-semibold text-blue-700">
+        Our Mission
+      </h3>
+      <p className="font-circular-web text-lg text-gray-500">
+      To provide an environment that is conducive to develop necessary expertise enriched by research driven solutions.
+      </p>
+    </div>
+
+    {/* Item 3 */}
+    <div>
+      <p className="text-xl font-bold text-white">03.</p>
+      <h3 className="font-circular-web text-sm font-semibold text-blue-700">
+      Value Statement
+      </h3>
+      <p className="font-circular-web text-lg text-gray-500">
+      Our core values define and guide the operations of our team. We embrace the core values by fronting them as our foundation in action and decision-making. 
+      </p>
+    </div>
+  </div>
+</div>
+
+
+<div className="text-[#F77F00] font-bold text-6xl mb-10">OUR COURSES</div>
 
       <div className="grid h-[135vh] w-full grid-cols-2 grid-rows-3 gap-7">
+
+      
         <BentoTilt className="bento-tilt_1 row-span-1 md:col-span-1 md:row-span-2">
           <BentoCard
-            src="videos/feature-2.mp4"
+          className="text-black"
+            src="videos/animation.mp4"
             title={
               <>
-                zig<b>m</b>a
+                Ani<b>mat</b>ion
               </>
             }
-            description="An anime and gaming-inspired NFT collection - the IP primed for expansion."
-            isComingSoon
+            // description="JOin Us and Learn how we Bring ideas to life with captivating animations that engage, inspire, and tell a story."
+            
           />
         </BentoTilt>
 
-        <BentoTilt className="bento-tilt_1 row-span-1 ms-32 md:col-span-1 md:ms-0">
-          <BentoCard
-            src="videos/feature-3.mp4"
-            title={
-              <>
-                n<b>e</b>xus
-              </>
-            }
-            description="A gamified social hub, adding a new dimension of play to social interaction for Web3 communities."
-            isComingSoon
-          />
-        </BentoTilt>
+       
 
         <BentoTilt className="bento-tilt_1 me-14 md:col-span-1 md:me-0">
           <BentoCard
-            src="videos/feature-4.mp4"
+            src="img/dlearning.jpg"
             title={
               <>
-                az<b>u</b>l
+                            grap<b>hi</b>c
+                            de<b>sig</b>n
               </>
             }
-            description="A cross-world AI Agent - elevating your gameplay to be more fun and productive."
-            isComingSoon
+            description="Building innovative software solutions tailored to drive your success."
+            
           />
         </BentoTilt>
+        <BentoTilt className="bento-tilt_2">
+          <video
+            src="videos/hero-2.mp4"
+            loop
+            muted
+            autoPlay
+            className="size-full object-cover object-center"
+          />
+          
+        </BentoTilt>
+
+        
 
         <BentoTilt className="bento-tilt_2">
           <div className="flex size-full flex-col justify-between bg-violet-300 p-5">
             <h1 className="bento-title special-font max-w-64 text-black">
-              M<b>o</b>re co<b>m</b>ing s<b>o</b>on.
+              M<b>o</b>re  cou<b>rs</b>es co<b>m</b>ing s<b>o</b>on.
             </h1>
 
             <TiLocationArrow className="m-5 scale-[5] self-end" />
           </div>
         </BentoTilt>
 
-        <BentoTilt className="bento-tilt_2">
-          <video
-            src="videos/feature-5.mp4"
-            loop
-            muted
-            autoPlay
-            className="size-full object-cover object-center"
+        <BentoTilt className="bento-tilt_1 row-span-1 ms-32 md:col-span-1 md:ms-0">
+          <BentoCard
+            
+            title={
+              <>
+                ANIMATION USING<b></b>  AI
+              </>
+            }
+            description="Creating stunning, AI-powered animations that redefine creativity and storytelling."
+            isComingSoon
           />
         </BentoTilt>
       </div>

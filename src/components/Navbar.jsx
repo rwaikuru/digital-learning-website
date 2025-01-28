@@ -6,14 +6,12 @@ import { TiLocationArrow } from "react-icons/ti";
 
 import Button from "./Button";
 
-const navItems = ["Nexus", "Vault", "Prologue", "About", "Contact"];
+const navItems = ["About-us", "Courses","Contact-Us"];
 
 const NavBar = () => {
-  // State for toggling audio and visual indicator
   const [isAudioPlaying, setIsAudioPlaying] = useState(false);
   const [isIndicatorActive, setIsIndicatorActive] = useState(false);
 
-  // Refs for audio and navigation container
   const audioElementRef = useRef(null);
   const navContainerRef = useRef(null);
 
@@ -21,13 +19,11 @@ const NavBar = () => {
   const [isNavVisible, setIsNavVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
 
-  // Toggle audio and visual indicator
   const toggleAudioIndicator = () => {
     setIsAudioPlaying((prev) => !prev);
     setIsIndicatorActive((prev) => !prev);
   };
 
-  // Manage audio playback
   useEffect(() => {
     if (isAudioPlaying) {
       audioElementRef.current.play();
@@ -38,7 +34,6 @@ const NavBar = () => {
 
   useEffect(() => {
     if (currentScrollY === 0) {
-      // Topmost position: show navbar without floating-nav
       setIsNavVisible(true);
       navContainerRef.current.classList.remove("floating-nav");
     } else if (currentScrollY > lastScrollY) {
@@ -71,11 +66,11 @@ const NavBar = () => {
         <nav className="flex size-full items-center justify-between p-4">
           {/* Logo and Product button */}
           <div className="flex items-center gap-7">
-            <img src="/img/logo.png" alt="logo" className="w-10" />
+            {/* <img src="/img/logo.png" alt="logo" className="w-10" /> */}
 
             <Button
               id="product-button"
-              title="Products"
+              title="Courses"
               rightIcon={<TiLocationArrow />}
               containerClass="bg-blue-50 md:flex hidden items-center justify-center gap-1"
             />
